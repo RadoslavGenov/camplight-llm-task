@@ -21,7 +21,7 @@ node app.js
 curl "http://localhost:3000/improve?text=Please%20improve%20this%20sample%20text."
 
 
-## **Project structure**
+## Project structure
 
 .
 ├── app.js
