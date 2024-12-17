@@ -16,6 +16,8 @@ cp .env.dist .env  # Update environment variables accordingly
 
 node app.js
 
+# make sure you have redis server started
+
 ## Example API call
 
 curl "http://localhost:3000/improve?text=Please%20improve%20this%20sample%20text."
