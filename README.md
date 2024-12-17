@@ -1,12 +1,18 @@
-# LLM Text Styler
+# **LLM Text Styler**
 
-A REST API which uses open AI model to improve a text sent by the user. Implemented with express, and includes a redis-based caching to optimize requests (faster response and limits rate usage on the model), and bullmq for queue-based job management for scalibility.
+A REST API which uses OpenAI's model to improve a text sent by the user. Implemented with **Express**, and includes:
 
-## Installation
+- **Redis-based caching** to optimize requests (faster response and limits rate usage on the model).
+- **BullMQ** for queue-based job management for scalability.
 
+---
+
+## **Installation**
+
+```bash
 npm install
 
-cp .env.dist .env // update env variables accordingly
+cp .env.dist .env  # Update environment variables accordingly
 
 node app.js
 
@@ -22,6 +28,12 @@ curl "http://localhost:3000/improve?text=Please%20improve%20this%20sample%20text
 ├── package-lock.json
 ├── package.json
 └── services
-├── cacheService.js
-├── llmService.js
-└── queueService.js
+    ├── cacheService.js
+    ├── llmService.js
+    └── queueService.js
+
+
+
+
+
+
